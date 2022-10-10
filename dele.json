@@ -1,0 +1,79 @@
+<Route path="/business"><News country="in" category="general" /></Route>
+<Route path="/entertainment"><News country="in" category="general" /></Route>
+<Route path="/general"><News country="in" category="general" /></Route>
+<Route path="/health"><News country="in" category="general" /></Route>
+<Route path="/science"><News country="in" category="general" /></Route>
+<Route path="/sports"><News country="in" category="general" /></Route>
+<Route path="/technology"><News country="in" category="general" /></Route>
+
+
+<Route path="/"><News country="in" category="general" /></Route>
+
+<Router>
+          <Navbar />
+          <Alert alert={alert}/>
+          <div className="container">
+          <Routes>
+            <Route exact path="/"
+              element={<Home showAlert={showAlert}/>}>
+            </Route>
+            <Route exact path="/about"
+              element={<About />}>
+            </Route>
+            <Route exact path="/login"
+              element={<Login showAlert={showAlert}/>}>
+            </Route>
+            <Route exact path="/signup"
+              element={<Signup showAlert={showAlert}/>}>
+            </Route>
+            
+          </Routes>
+          </div>
+          {/* <About /> */}
+        </Router>
+
+{
+    "status": "ok",
+    "totalResults": 37,
+    "articles": [
+        {
+            "source": {
+                "id": null,
+                "name": "New York Daily News"
+            },
+            "author": "Larry McShane",
+            "title": "NYC couple busted in record setting $3.6 billion Bitcoin scam - New York Daily News",
+            "description": "Defendants Ilya Litchtenstein, 34, and Heather Morgan, 31, were taken into custody for conspiracy to launder the Bitcoin linked to the company Bitfinex, with the couple accused of using an assortment of sophisticated methods and bogus identities to cash in on…",
+            "url": "https://www.nydailynews.com/new-york/nyc-crime/ny-crypto-currency-couple-busted-bitcoin-20220208-mexiatbyivcmtmqt4ekrt7uiy4-story.html",
+            "urlToImage": "https://www.nydailynews.com/resizer/3C0-gmVPjSl_xIWqJr69I_Azfzw=/1200x0/top/cloudfront-us-east-1.images.arcpublishing.com/tronc/5FKUGN74B5BYHLXUNW4H4CKRRY.jpg",
+            "publishedAt": "2022-02-08T23:03:00Z",
+            "content": "A record seizure of $3.6 billion of stolen Bitcoin accompanied the Tuesday arrests of a Manhattan husband and wife for their roles in a lucrative and unprecedented 2016 cryptocurrency hack of a virtu… [+2859 chars]"
+        },
+        {
+            "source": {
+                "id": "cnn",
+                "name": "CNN"
+            },
+            "author": "Clare Foran, CNN",
+            "title": "House passes stopgap government funding bill to avert shutdown - CNN",
+            "description": "The House of Representatives voted Tuesday to pass a short-term government funding bill to avert a shutdown at the end of next week.",
+            "url": "https://www.cnn.com/2022/02/08/politics/house-vote-government-funding-bill/index.html",
+            "urlToImage": "https://cdn.cnn.com/cnnnext/dam/assets/191113111541-us-capitol-impeachment-hearing-1113-super-tease.jpg",
+            "publishedAt": "2022-02-08T22:59:00Z",
+            "content": "(CNN)The House of Representatives voted Tuesday to pass a short-term government funding bill to avert a shutdown at the end of next week. \r\nFunding is currently set to expire on February 18, but the … [+2286 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "BBC News"
+            },
+            "author": "https://www.facebook.com/bbcnews",
+            "title": "Brit Awards 2022: Ballads over bangers as Adele wins big - BBC News",
+            "description": "The singer bagged three of the main awards at the O2 Arena on Tuesday evening.",
+            "url": "https://www.bbc.com/news/entertainment-arts-60312788",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/AF09/production/_123190844_hi073645787.jpg",
+            "publishedAt": "2022-02-08T22:45:44Z",
+            "content": "Paul GlynnBBC culture reporter\r\nImage caption, Adele gave her first performance at the Brit Awards since 2016\r\nAdele won three out the four main prizes at the Brit Awards on Tuesday, where she also p… [+5866 chars]"
+        }
+    ]
+}
